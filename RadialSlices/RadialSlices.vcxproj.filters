@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\config">
+      <UniqueIdentifier>{7b4c75a3-f660-426a-8977-5338e11ffcac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\font">
+      <UniqueIdentifier>{81f68e99-b556-43f3-be16-d2faff505aae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gl">
+      <UniqueIdentifier>{8efcba5a-e20b-4958-9858-a24b572d0b31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\config">
+      <UniqueIdentifier>{73f815a6-68ee-4b90-a00c-4cee03617e78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\font">
+      <UniqueIdentifier>{cdd82040-1a58-49b1-98fa-8ea1d8ed1f41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gl\shader">
+      <UniqueIdentifier>{bd4b1779-4208-4396-b2fd-dbb0fa272ee7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gl">
+      <UniqueIdentifier>{9a8a0d4c-9e62-473c-9e61-736f04a68b2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gl\shaders">
+      <UniqueIdentifier>{f6aae725-6136-4fee-915f-562ae9faae18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gl\scenes">
+      <UniqueIdentifier>{c9adec53-a7fc-4d21-8ce8-2399467c3e53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gl\scenes">
+      <UniqueIdentifier>{522a9445-3a59-4ce2-981c-3c176be99d08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\cancer">
+      <UniqueIdentifier>{9e3b3e97-cc86-40d8-aa2f-708bb84623b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cancer">
+      <UniqueIdentifier>{37900c00-2811-4dc7-8dfd-f299e8373b8b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config.cpp">
+      <Filter>Source Files\config</Filter>
+    </ClCompile>
+    <ClCompile Include="command_line_arguments.cpp">
+      <Filter>Source Files\config</Filter>
+    </ClCompile>
+    <ClCompile Include="font.cpp">
+      <Filter>Source Files\font</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeType_font_handle.cpp">
+      <Filter>Source Files\font</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeType_handle.cpp">
+      <Filter>Source Files\font</Filter>
+    </ClCompile>
+    <ClCompile Include="open_gl_handler.cpp">
+      <Filter>Source Files\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="scene.cpp">
+      <Filter>Source Files\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="shader.cpp">
+      <Filter>Source Files\gl\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="shader_data.cpp">
+      <Filter>Source Files\gl\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="shader_program.cpp">
+      <Filter>Source Files\gl\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="texture.cpp">
+      <Filter>Source Files\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="uniform.cpp">
+      <Filter>Source Files\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="render_scene.cpp">
+      <Filter>Source Files\gl\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="slice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clipper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="slice_model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sliced_cylinder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl_va.cpp">
+      <Filter>Source Files\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="tip_model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vec2d.cpp">
+      <Filter>Source Files\cancer</Filter>
+    </ClCompile>
+    <ClCompile Include="segment_reader.cpp">
+      <Filter>Source Files\cancer</Filter>
+    </ClCompile>
+    <ClCompile Include="regex_ext.cpp">
+      <Filter>Source Files\cancer</Filter>
+    </ClCompile>
+    <ClCompile Include="sweep.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cylinder.cpp">
+      <Filter>Source Files\cancer</Filter>
+    </ClCompile>
+    <ClCompile Include="Polygon.cpp">
+      <Filter>Source Files\cancer</Filter>
+    </ClCompile>
+    <ClCompile Include="make_poly.cpp">
+      <Filter>Source Files\cancer</Filter>
+    </ClCompile>
+    <ClCompile Include="angle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool_path_model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="acr_connection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="windows_file_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pipe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="split_string.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="axis_model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header Files\config</Filter>
+    </ClInclude>
+    <ClInclude Include="command_line_arguments.h">
+      <Filter>Header Files\config</Filter>
+    </ClInclude>
+    <ClInclude Include="font.h">
+      <Filter>Header Files\font</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeType_font_handle.h">
+      <Filter>Header Files\font</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeType_handle.h">
+      <Filter>Header Files\font</Filter>
+    </ClInclude>
+    <ClInclude Include="shader.h">
+      <Filter>Header Files\gl\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="shader_data.h">
+      <Filter>Header Files\gl\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="shader_program.h">
+      <Filter>Header Files\gl\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="gl.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="glm_includes.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="open_gl_handler.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="scene.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="state_gl.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="texture.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="uniform.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="render_scene.h">
+      <Filter>Header Files\gl\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="scene_id.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="slice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clipper.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="slice_model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sliced_cylinder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gl_va.h">
+      <Filter>Header Files\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="tip_model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="segment_reader.h">
+      <Filter>Header Files\cancer</Filter>
+    </ClInclude>
+    <ClInclude Include="Vec2D.h">
+      <Filter>Header Files\cancer</Filter>
+    </ClInclude>
+    <ClInclude Include="typedefs.h">
+      <Filter>Header Files\cancer</Filter>
+    </ClInclude>
+    <ClInclude Include="rational.h">
+      <Filter>Header Files\cancer</Filter>
+    </ClInclude>
+    <ClInclude Include="math.h">
+      <Filter>Header Files\cancer</Filter>
+    </ClInclude>
+    <ClInclude Include="regex_ext.h">
+      <Filter>Header Files\cancer</Filter>
+    </ClInclude>
+    <ClInclude Include="sweep.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="model_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cylinder.h">
+      <Filter>Header Files\cancer</Filter>
+    </ClInclude>
+    <ClInclude Include="make_poly.h">
+      <Filter>Header Files\cancer</Filter>
+    </ClInclude>
+    <ClInclude Include="Polygon.h">
+      <Filter>Header Files\cancer</Filter>
+    </ClInclude>
+    <ClInclude Include="angle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool_path_model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="acr_connection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="windows_file_dialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pipe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="split_string.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="axis_model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

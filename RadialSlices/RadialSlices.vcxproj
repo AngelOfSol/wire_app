@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5F875E1A-CA6D-441B-BA92-134BE9705CF3}</ProjectGuid>
+    <RootNamespace>RadialSlices</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)build\</OutDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <IncludePath>$(SolutionDir)dep\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)dep\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)build\</OutDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <IncludePath>$(SolutionDir)dep\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)dep\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glew32.lib;freetype.lib;freeglut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <StringPooling>true</StringPooling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glew32.lib;freetype.lib;freeglut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/NODEFAULTLIB:LIBCMT %(AdditionalOptions)</AdditionalOptions>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <Profile>true</Profile>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="acr_connection.cpp" />
+    <ClCompile Include="angle.cpp" />
+    <ClCompile Include="axis_model.cpp" />
+    <ClCompile Include="clipper.cpp" />
+    <ClCompile Include="command_line_arguments.cpp" />
+    <ClCompile Include="config.cpp" />
+    <ClCompile Include="Cylinder.cpp" />
+    <ClCompile Include="debug.cpp" />
+    <ClCompile Include="font.cpp" />
+    <ClCompile Include="FreeType_font_handle.cpp" />
+    <ClCompile Include="FreeType_handle.cpp" />
+    <ClCompile Include="gl_va.cpp" />
+    <ClCompile Include="make_poly.cpp" />
+    <ClCompile Include="open_gl_handler.cpp" />
+    <ClCompile Include="pipe.cpp" />
+    <ClCompile Include="Polygon.cpp" />
+    <ClCompile Include="regex_ext.cpp" />
+    <ClCompile Include="render_scene.cpp" />
+    <ClCompile Include="scene.cpp" />
+    <ClCompile Include="segment_reader.cpp" />
+    <ClCompile Include="shader.cpp" />
+    <ClCompile Include="shader_data.cpp" />
+    <ClCompile Include="shader_program.cpp" />
+    <ClCompile Include="slice.cpp" />
+    <ClCompile Include="sliced_cylinder.cpp" />
+    <ClCompile Include="slice_model.cpp" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="split_string.cpp" />
+    <ClCompile Include="sweep.cpp" />
+    <ClCompile Include="texture.cpp" />
+    <ClCompile Include="tip_model.cpp" />
+    <ClCompile Include="tool_path_model.cpp" />
+    <ClCompile Include="uniform.cpp" />
+    <ClCompile Include="vec2d.cpp" />
+    <ClCompile Include="windows_file_dialog.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="acr_connection.h" />
+    <ClInclude Include="axis_model.h" />
+    <ClInclude Include="clipper.hpp" />
+    <ClInclude Include="command_line_arguments.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="Cylinder.h" />
+    <ClInclude Include="debug.h" />
+    <ClInclude Include="font.h" />
+    <ClInclude Include="FreeType_font_handle.h" />
+    <ClInclude Include="FreeType_handle.h" />
+    <ClInclude Include="glm_includes.h" />
+    <ClInclude Include="gl.h" />
+    <ClInclude Include="gl_va.h" />
+    <ClInclude Include="make_poly.h" />
+    <ClInclude Include="math.h" />
+    <ClInclude Include="model_data.h" />
+    <ClInclude Include="open_gl_handler.h" />
+    <ClInclude Include="angle.h" />
+    <ClInclude Include="pipe.h" />
+    <ClInclude Include="Polygon.h" />
+    <ClInclude Include="rational.h" />
+    <ClInclude Include="regex_ext.h" />
+    <ClInclude Include="render_scene.h" />
+    <ClInclude Include="scene.h" />
+    <ClInclude Include="scene_id.h" />
+    <ClInclude Include="segment_reader.h" />
+    <ClInclude Include="shader.h" />
+    <ClInclude Include="shader_data.h" />
+    <ClInclude Include="shader_program.h" />
+    <ClInclude Include="slice.h" />
+    <ClInclude Include="sliced_cylinder.h" />
+    <ClInclude Include="slice_model.h" />
+    <ClInclude Include="split_string.h" />
+    <ClInclude Include="state_gl.h" />
+    <ClInclude Include="sweep.h" />
+    <ClInclude Include="texture.h" />
+    <ClInclude Include="tip_model.h" />
+    <ClInclude Include="tool_path_model.h" />
+    <ClInclude Include="typedefs.h" />
+    <ClInclude Include="uniform.h" />
+    <ClInclude Include="Vec2D.h" />
+    <ClInclude Include="windows_file_dialog.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
