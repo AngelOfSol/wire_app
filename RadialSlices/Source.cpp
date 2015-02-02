@@ -174,7 +174,7 @@ int main(int argc, char ** argv)
 	}
 
 	input.acr = args.has_option("acr");
-
+	input.start_live = args.has_option("live");
 	auto renderScene = std::make_unique<render_scene>(glHandler, input);
 
 	try

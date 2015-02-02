@@ -14,6 +14,7 @@ struct model_data
 	config config;
 
 	bool acr;
+	bool start_live;
 	struct
 	{
 		glm::vec2 initial_size;

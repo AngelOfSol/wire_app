@@ -24,9 +24,7 @@ render_scene::~render_scene()
 
 void render_scene::init(void)
 {
-	this->m_camera.pos = glm::vec3();
 
-	this->m_camera.pos.z = -8;
 
 	auto part_info = load_commands(this->m_input_info.model_file_name);
 
@@ -42,6 +40,8 @@ void render_scene::init(void)
 	, resolution);
 	this->m_prerendered_grinded_wire = std::make_unique<sliced_cylinder>(glm::vec2{ part_info.length, part_info.diameter }
 	, resolution);
+
+	this->m_camera.pos = glm::vec3(part_info.length * this->scale_factor, 0, -5);
 
 	this->m_tip = std::make_unique<tip_model>();
 
@@ -490,7 +490,8 @@ void render_scene::init(void)
 	glDepthRange(0.0f, 1.0f);
 	glClearDepth(1.0f);
 
-	this->in_real_time = false;
+	this->in_real_time = this->m_input_info.start_live;
+
 }
 scene_id render_scene::update(int elapsed)
 {
